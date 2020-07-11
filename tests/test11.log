@@ -1,0 +1,103 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+type: node
+    size: 3
+    fields: 
+        type: integer, name: d, index: 0
+        type: integer, name: s, index: 1
+        type: integer, name: t, index: 2
+
+type: List
+    size: 4
+    fields: 
+        type: integer, name: a, index: 0
+        type: integer, name: b, index: 1
+        type: node, name: g, index: 2
+        type: List, name: next, index: 3
+
+global symbol table:
+********************
+
+name: y
+    type: node
+    row size: 1
+    col size: 1
+    address: 4096
+name: z
+    type: node
+    row size: 1
+    col size: 1
+    address: 4097
+name: head
+    type: List
+    row size: 1
+    col size: 1
+    address: 4098
+name: insert
+    type: integer
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 0
+    params: 
+        type: integer, name: a
+        type: integer, name: b
+        type: node, name: g
+name: gcd
+    type: node
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 1
+    params: 
+        type: integer, name: m
+        type: integer, name: n
+
+read: L0 2058
+read: F0 2068
+read: L1 2272
+read: L2 2292
+read: F1 2308
+read: L3 2356
+read: L4 2490
+read: MAIN 2550
+read: L5 2856
+read: L6 3074
+find: L0 2058
+find: MAIN 2550
+find: L1 2272
+find: L2 2292
+find: L3 2356
+find: L4 2490
+find: F1 2308
+find: F0 2068
+find: F1 2308
+find: L6 3074
+find: L5 2856

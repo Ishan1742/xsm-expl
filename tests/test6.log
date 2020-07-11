@@ -1,0 +1,129 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+global symbol table:
+********************
+
+name: a
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4096
+name: b
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4097
+name: n
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4098
+name: arr
+    type: integer
+    row size: 10
+    col size: 1
+    address: 4099
+name: swap
+    type: integer
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 0
+    params: 
+        type: integer, name: index
+        type: integer, name: newindex
+name: readarr
+    type: integer
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 1
+    params: 
+        type: integer, name: temp
+name: writearr
+    type: integer
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 2
+    params: 
+        type: integer, name: temp
+name: partition
+    type: integer
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 3
+    params: 
+        type: integer, name: low
+        type: integer, name: high
+name: quicksort
+    type: integer
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 4
+    params: 
+        type: integer, name: low
+        type: integer, name: high
+
+read: L0 2058
+read: F0 2068
+read: F1 2146
+read: L1 2160
+read: L2 2230
+read: F2 2250
+read: L3 2264
+read: L4 2334
+read: F3 2354
+read: L5 2400
+read: L7 2490
+read: L6 2508
+read: F4 2566
+read: L8 2710
+read: MAIN 2726
+find: L0 2058
+find: MAIN 2726
+find: L2 2230
+find: L1 2160
+find: L4 2334
+find: L3 2264
+find: L6 2508
+find: L7 2490
+find: F0 2068
+find: L5 2400
+find: F0 2068
+find: L8 2710
+find: F3 2354
+find: F4 2566
+find: F4 2566
+find: F1 2146
+find: F4 2566
+find: F2 2250

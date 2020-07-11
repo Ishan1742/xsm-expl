@@ -1,0 +1,87 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+global symbol table:
+********************
+
+name: n
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4096
+name: arr
+    type: integer
+    row size: 10
+    col size: 1
+    address: 4097
+name: i
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4107
+name: j
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4108
+name: dup
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4109
+name: BubbleSort
+    type: integer
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 0
+    params: 
+        type: integer, name: first
+        type: integer, name: last
+
+read: L0 2058
+read: F0 2068
+read: L2 2190
+read: L1 2266
+read: MAIN 2282
+read: L3 2322
+read: L4 2372
+read: L5 2410
+read: L6 2460
+find: L0 2058
+find: MAIN 2282
+find: L1 2266
+find: L2 2190
+find: F0 2068
+find: F0 2068
+find: L4 2372
+find: L3 2322
+find: F0 2068
+find: L6 2460
+find: L5 2410

@@ -1,0 +1,131 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+
+class table: 
+************
+
+class: A
+parent: NULL
+index: 0
+field_count: 0
+function_count: 2
+    func: f0
+        func_type: integer, func_label : F0, func_pos: 0
+        params: 
+            NULL
+    func: f1
+        func_type: integer, func_label : F1, func_pos: 1
+        params: 
+            NULL
+
+class: B
+parent: A
+index: 1
+field_count: 0
+function_count: 3
+    func: f0
+        func_type: integer, func_label : F2, func_pos: 0
+        params: 
+            NULL
+    func: f1
+        func_type: integer, func_label : F1, func_pos: 1
+        params: 
+            NULL
+    func: f2
+        func_type: integer, func_label : F3, func_pos: 2
+        params: 
+            NULL
+
+class: C
+parent: B
+index: 2
+field_count: 0
+function_count: 4
+    func: f0
+        func_type: integer, func_label : F4, func_pos: 0
+        params: 
+            NULL
+    func: f1
+        func_type: integer, func_label : F1, func_pos: 1
+        params: 
+            NULL
+    func: f2
+        func_type: integer, func_label : F5, func_pos: 2
+        params: 
+            NULL
+    func: f4
+        func_type: integer, func_label : F6, func_pos: 3
+        params: 
+            NULL
+
+global symbol table:
+********************
+
+name: obj
+    type(class): A
+    row size: 2
+    col size: 1
+    address: 4120
+name: test_obj
+    type(class): A
+    row size: 2
+    col size: 1
+    address: 4122
+
+read: F0 2058
+read: F1 2108
+read: F2 2158
+read: F3 2208
+read: F4 2258
+read: F5 2308
+read: F6 2358
+read: L0 2408
+read: MAIN 2492
+read: L1 2604
+read: L3 2646
+read: L5 2686
+read: L4 2686
+read: L2 2686
+find: L0 2408
+find: F0 2058
+find: F1 2108
+find: F2 2158
+find: F1 2108
+find: F3 2208
+find: F4 2258
+find: F1 2108
+find: F5 2308
+find: F6 2358
+find: MAIN 2492
+find: L1 2604
+find: L2 2686
+find: L3 2646
+find: L4 2686
+find: L5 2686

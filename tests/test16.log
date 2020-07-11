@@ -1,0 +1,92 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+
+class table: 
+************
+
+class: A
+parent: NULL
+index: 0
+field_count: 1
+    type: integer, name: i, index: 0
+function_count: 2
+    func: f0
+        func_type: integer, func_label : F0, func_pos: 0
+        params: 
+            NULL
+    func: f1
+        func_type: integer, func_label : F1, func_pos: 1
+        params: 
+            NULL
+
+class: B
+parent: A
+index: 1
+field_count: 1
+    type: integer, name: i, index: 0
+function_count: 2
+    func: f0
+        func_type: integer, func_label : F0, func_pos: 0
+        params: 
+            NULL
+    func: f1
+        func_type: integer, func_label : F2, func_pos: 1
+        params: 
+            NULL
+
+global symbol table:
+********************
+
+name: n
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4112
+name: obj
+    type(class): A
+    row size: 2
+    col size: 1
+    address: 4113
+
+read: F0 2058
+read: F1 2160
+read: F2 2222
+read: L0 2284
+read: MAIN 2340
+read: L1 2442
+read: L2 2470
+find: L0 2284
+find: F0 2058
+find: F1 2160
+find: F0 2058
+find: F2 2222
+find: MAIN 2340
+find: L1 2442
+find: L2 2470

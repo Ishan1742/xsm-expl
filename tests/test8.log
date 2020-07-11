@@ -1,0 +1,60 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+type: List
+    size: 2
+    fields: 
+        type: integer, name: data, index: 0
+        type: List, name: next, index: 1
+
+global symbol table:
+********************
+
+name: head
+    type: List
+    row size: 1
+    col size: 1
+    address: 4096
+
+read: L0 2058
+read: MAIN 2068
+read: L1 2150
+read: L3 2282
+read: L4 2314
+read: L2 2332
+read: L5 2340
+read: L6 2406
+find: L0 2058
+find: MAIN 2068
+find: L2 2332
+find: L3 2282
+find: L4 2314
+find: L1 2150
+find: L6 2406
+find: L5 2340

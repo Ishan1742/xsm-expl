@@ -1,0 +1,89 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+
+class table: 
+************
+
+class: Rectangle
+parent: NULL
+index: 0
+field_count: 2
+    type: integer, name: length, index: 0
+    type: integer, name: breadth, index: 1
+function_count: 2
+    func: set_dimensions
+        func_type: integer, func_label : F0, func_pos: 0
+        params: 
+            NULL
+    func: area
+        func_type: integer, func_label : F1, func_pos: 1
+        params: 
+            NULL
+
+class: Square
+parent: Rectangle
+index: 1
+field_count: 2
+    type: integer, name: length, index: 0
+    type: integer, name: breadth, index: 1
+function_count: 2
+    func: set_dimensions
+        func_type: integer, func_label : F2, func_pos: 0
+        params: 
+            NULL
+    func: area
+        func_type: integer, func_label : F1, func_pos: 1
+        params: 
+            NULL
+
+global symbol table:
+********************
+
+name: obj
+    type(class): Rectangle
+    row size: 2
+    col size: 1
+    address: 4112
+
+read: F1 2058
+read: F0 2100
+read: F2 2250
+read: L0 2356
+read: MAIN 2412
+read: L1 2608
+read: L2 2636
+find: L0 2356
+find: F0 2100
+find: F1 2058
+find: F2 2250
+find: F1 2058
+find: MAIN 2412
+find: L1 2608
+find: L2 2636

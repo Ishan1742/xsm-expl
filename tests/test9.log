@@ -1,0 +1,123 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+type: bst
+    size: 3
+    fields: 
+        type: integer, name: a, index: 0
+        type: bst, name: left, index: 1
+        type: bst, name: right, index: 2
+
+global symbol table:
+********************
+
+name: in
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4096
+name: opt
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4097
+name: insert
+    type: bst
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 0
+    params: 
+        type: bst, name: h
+        type: integer, name: key
+name: inOrder
+    type: integer
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 1
+    params: 
+        type: bst, name: h
+name: preOrder
+    type: integer
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 2
+    params: 
+        type: bst, name: h
+name: postOrder
+    type: integer
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 3
+    params: 
+        type: bst, name: h
+
+read: L0 2058
+read: F0 2068
+read: L1 2158
+read: L3 2226
+read: L5 2292
+read: L4 2292
+read: L2 2292
+read: F1 2312
+read: L6 2422
+read: F2 2438
+read: L7 2548
+read: F3 2564
+read: L8 2674
+read: MAIN 2690
+read: L9 2768
+read: L10 2852
+find: L0 2058
+find: MAIN 2690
+find: L1 2158
+find: L2 2292
+find: L3 2226
+find: F0 2068
+find: L4 2292
+find: L5 2292
+find: F0 2068
+find: L6 2422
+find: F1 2312
+find: F1 2312
+find: L7 2548
+find: F2 2438
+find: F2 2438
+find: L8 2674
+find: F3 2564
+find: F3 2564
+find: L10 2852
+find: F0 2068
+find: L9 2768
+find: F1 2312
+find: F2 2438
+find: F3 2564

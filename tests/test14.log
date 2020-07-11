@@ -1,0 +1,97 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+type: list
+    size: 2
+    fields: 
+        type: integer, name: data, index: 0
+        type: list, name: next, index: 1
+
+
+class table: 
+************
+
+class: linkedlist
+parent: NULL
+index: 0
+field_count: 3
+    type: list, name: head, index: 0
+    type: list, name: tail, index: 1
+    type: integer, name: length, index: 2
+function_count: 4
+    func: getlength
+        func_type: integer, func_label : F0, func_pos: 0
+        params: 
+            NULL
+    func: init
+        func_type: integer, func_label : F1, func_pos: 1
+        params: 
+            NULL
+    func: insert
+        func_type: list, func_label : F2, func_pos: 2
+        params: 
+            type: integer, name: data
+    func: printlinkedlist
+        func_type: integer, func_label : F3, func_pos: 3
+        params: 
+            NULL
+
+global symbol table:
+********************
+
+name: obj
+    type(class): linkedlist
+    row size: 2
+    col size: 1
+    address: 4104
+
+read: F0 2058
+read: F1 2088
+read: F2 2146
+read: L1 2260
+read: L2 2296
+read: F3 2340
+read: L3 2362
+read: L4 2428
+read: L0 2444
+read: MAIN 2482
+read: L5 2614
+read: L6 2720
+find: L0 2444
+find: L1 2260
+find: L2 2296
+find: L4 2428
+find: L3 2362
+find: F0 2058
+find: F1 2088
+find: F2 2146
+find: F3 2340
+find: MAIN 2482
+find: L6 2720
+find: L5 2614

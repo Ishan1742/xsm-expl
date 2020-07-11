@@ -1,0 +1,138 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+
+class table: 
+************
+
+class: Person
+parent: NULL
+index: 0
+field_count: 2
+    type: string, name: name, index: 0
+    type: integer, name: age, index: 1
+function_count: 3
+    func: printDetails
+        func_type: integer, func_label : F0, func_pos: 0
+        params: 
+            NULL
+    func: findName
+        func_type: string, func_label : F1, func_pos: 1
+        params: 
+            NULL
+    func: createPerson
+        func_type: integer, func_label : F2, func_pos: 2
+        params: 
+            type: string, name: name
+            type: integer, name: age
+
+class: Student
+parent: Person
+index: 1
+field_count: 4
+    type: string, name: name, index: 0
+    type: integer, name: age, index: 1
+    type: integer, name: rollnumber, index: 2
+    type: string, name: dept, index: 3
+function_count: 4
+    func: printDetails
+        func_type: integer, func_label : F3, func_pos: 0
+        params: 
+            NULL
+    func: findName
+        func_type: string, func_label : F1, func_pos: 1
+        params: 
+            NULL
+    func: createPerson
+        func_type: integer, func_label : F2, func_pos: 2
+        params: 
+            type: string, name: name
+            type: integer, name: age
+    func: createStudent
+        func_type: integer, func_label : F4, func_pos: 3
+        params: 
+            type: string, name: name
+            type: integer, name: age
+            type: integer, name: rollNo
+            type: string, name: dept
+
+global symbol table:
+********************
+
+name: n
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4112
+name: temp
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4113
+name: name
+    type: string
+    row size: 1
+    col size: 1
+    address: 4114
+name: first
+    type(class): Person
+    row size: 2
+    col size: 1
+    address: 4115
+name: second
+    type(class): Student
+    row size: 2
+    col size: 1
+    address: 4117
+name: arbitrary
+    type(class): Person
+    row size: 2
+    col size: 1
+    address: 4119
+
+read: F0 2058
+read: F1 2152
+read: F2 2182
+read: F4 2236
+read: F3 2322
+read: L0 2488
+read: MAIN 2550
+read: L1 2784
+read: L2 2792
+find: L0 2488
+find: F0 2058
+find: F1 2152
+find: F2 2182
+find: F3 2322
+find: F1 2152
+find: F2 2182
+find: F4 2236
+find: MAIN 2550
+find: L1 2784
+find: L2 2792

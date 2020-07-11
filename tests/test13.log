@@ -1,0 +1,129 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+type: bst
+    size: 3
+    fields: 
+        type: integer, name: a, index: 0
+        type: bst, name: left, index: 1
+        type: bst, name: right, index: 2
+
+
+class table: 
+************
+
+class: bstclass
+parent: NULL
+index: 0
+field_count: 1
+    type: bst, name: root, index: 0
+function_count: 8
+    func: init
+        func_type: integer, func_label : F0, func_pos: 0
+        params: 
+            NULL
+    func: getroot
+        func_type: bst, func_label : F1, func_pos: 1
+        params: 
+            NULL
+    func: setroot
+        func_type: integer, func_label : F2, func_pos: 2
+        params: 
+            type: bst, name: n1
+    func: getnode
+        func_type: bst, func_label : F3, func_pos: 3
+        params: 
+            type: integer, name: key
+    func: insert
+        func_type: bst, func_label : F4, func_pos: 4
+        params: 
+            type: bst, name: h
+            type: integer, name: key
+    func: inOrder_fun
+        func_type: integer, func_label : F5, func_pos: 5
+        params: 
+            type: bst, name: h
+    func: preOrder_fun
+        func_type: integer, func_label : F6, func_pos: 6
+        params: 
+            type: bst, name: h
+    func: postOrder_fun
+        func_type: integer, func_label : F7, func_pos: 7
+        params: 
+            type: bst, name: h
+
+global symbol table:
+********************
+
+name: obj
+    type(class): bstclass
+    row size: 2
+    col size: 1
+    address: 4104
+
+read: F0 2058
+read: F1 2092
+read: F2 2122
+read: F3 2160
+read: F4 2256
+read: L1 2330
+read: L3 2424
+read: L5 2516
+read: L4 2516
+read: L2 2516
+read: F5 2536
+read: L6 2706
+read: F6 2722
+read: L7 2892
+read: F7 2908
+read: L8 3078
+read: L0 3094
+read: MAIN 3140
+read: L9 3306
+read: L10 3406
+find: L0 3094
+find: L1 2330
+find: L2 2516
+find: L3 2424
+find: L4 2516
+find: L5 2516
+find: L6 2706
+find: L7 2892
+find: L8 3078
+find: F0 2058
+find: F1 2092
+find: F2 2122
+find: F3 2160
+find: F4 2256
+find: F5 2536
+find: F6 2722
+find: F7 2908
+find: MAIN 3140
+find: L10 3406
+find: L9 3306

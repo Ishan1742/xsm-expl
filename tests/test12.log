@@ -1,0 +1,71 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+global symbol table:
+********************
+
+name: r1
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4096
+name: qi
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4097
+name: r0
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4098
+name: si
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4099
+name: ti
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4100
+name: ri
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4101
+
+read: L0 2058
+read: MAIN 2068
+read: L1 2166
+read: L2 2284
+find: L0 2058
+find: MAIN 2068
+find: L2 2284
+find: L1 2166

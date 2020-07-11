@@ -1,0 +1,80 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+global symbol table:
+********************
+
+name: n
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4096
+name: arr
+    type: integer
+    row size: 50
+    col size: 1
+    address: 4097
+name: i
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4147
+name: j
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4148
+name: dup
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4149
+
+read: L0 2058
+read: MAIN 2068
+read: L1 2108
+read: L2 2158
+read: L3 2162
+read: L5 2174
+read: L7 2226
+read: L6 2236
+read: L4 2246
+read: L8 2250
+read: L9 2300
+find: L0 2058
+find: MAIN 2068
+find: L2 2158
+find: L1 2108
+find: L4 2246
+find: L6 2236
+find: L7 2226
+find: L5 2174
+find: L3 2162
+find: L9 2300
+find: L8 2250

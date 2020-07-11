@@ -1,0 +1,80 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+
+class table: 
+************
+
+class: fact
+parent: NULL
+index: 0
+field_count: 1
+    type: integer, name: x, index: 0
+function_count: 1
+    func: findfactorial
+        func_type: integer, func_label : F0, func_pos: 0
+        params: 
+            type: integer, name: n
+
+class: testfactsum
+parent: NULL
+index: 1
+field_count: 2
+    type: fact, name: o1, index: 0
+function_count: 1
+    func: testfun
+        func_type: integer, func_label : F1, func_pos: 0
+        params: 
+            type: integer, name: n
+
+global symbol table:
+********************
+
+name: obj
+    type(class): testfactsum
+    row size: 2
+    col size: 1
+    address: 4112
+
+read: F0 2058
+read: L1 2086
+read: L2 2156
+read: F1 2176
+read: L3 2228
+read: L4 2332
+read: L0 2352
+read: MAIN 2404
+find: L0 2352
+find: L1 2086
+find: L2 2156
+find: L4 2332
+find: L3 2228
+find: F0 2058
+find: F1 2176
+find: MAIN 2404

@@ -1,0 +1,62 @@
+
+type table: 
+***********
+
+type: integer
+    size: 1
+    fields: 
+        NULL
+
+type: string
+    size: 1
+    fields: 
+        NULL
+
+type: boolean
+    size: 0
+    fields: 
+        NULL
+
+type: null
+    size: 0
+    fields: 
+        NULL
+
+type: type
+    size: 0
+    fields: 
+        NULL
+
+global symbol table:
+********************
+
+name: n
+    type: integer
+    row size: 1
+    col size: 1
+    address: 4096
+name: fibo
+    type: integer
+    row size: 0
+    col size: 0
+    address: -1
+    func label: 0
+    params: 
+        type: integer, name: n
+
+read: L0 2058
+read: F0 2068
+read: L1 2096
+read: L3 2118
+read: L4 2182
+read: L2 2182
+read: MAIN 2202
+find: L0 2058
+find: MAIN 2202
+find: L1 2096
+find: L2 2182
+find: L3 2118
+find: L4 2182
+find: F0 2068
+find: F0 2068
+find: F0 2068
